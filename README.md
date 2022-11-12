@@ -1,2 +1,5 @@
-# rocket-bank
-스터디 모임비 정산 페이지
+# ROCKET-BANK
+
+## Description
+
+  - 스터디 모임비 관리 페이지
