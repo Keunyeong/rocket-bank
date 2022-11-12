@@ -1,4 +1,4 @@
-.contents {
+.background {
   height: 100%;
   width: 100%;
   display: flex;
@@ -8,4 +8,13 @@
   left: 0;
   top: 0;
   text-align: center;
+}
+
+.contents {
+  height: 100%;
+  width: 950px;
+  margin-top: 70px;
+  position: relative;
+  overflow: scroll;
+  background: #141414;
 }

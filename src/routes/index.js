@@ -1,5 +1,8 @@
 import styles from './Routes.module.scss'
 import {addData, getData} from '../firebase/firestore'
+import ModalPortal from "../components/portal";
+import Modal from "../components/modal";
+import {useState} from "react"
 
 function App() {
   const handleInsertOnclickEvent =()=>{
@@ -17,12 +20,22 @@ function App() {
     })
     console.log(response)
   } 
+  const [modalOn, setModalOn] = useState(false);
+
+  const handleModal = () => {
+    setModalOn(!modalOn);
+  };
   return (
     <div className={styles.app}>
       <header className={styles.appHeader}>
         <button onClick={handleInsertOnclickEvent}>Insert</button>
         <button onClick={handleReadDataOnclickEvent}>ReadData</button>
+        <button onClick={handleModal}>open portal</button>
+        <ModalPortal>
+          {modalOn && <Modal onClose={handleModal} />}
+        </ModalPortal>
       </header>
+      
     </div>
   )
 }
