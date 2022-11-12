@@ -1,0 +1,12 @@
+.li {
+  width: 70%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 2px solid red;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  color: black;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
