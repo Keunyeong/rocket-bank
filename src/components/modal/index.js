@@ -1,12 +1,11 @@
 import styles from './modal.module.scss'
 
-const Modal = ({onClose}) => {
+const Modal = (props) => {
 
   return (
       <div className={styles.background}>
         <div className={styles.contents}>
-            <h1>모달모달모달</h1>
-            <button onClick={onClose}>close portal</button>
+            {props.children}
          </div>
       </div>
   );

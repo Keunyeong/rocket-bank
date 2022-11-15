@@ -8,13 +8,17 @@
   left: 0;
   top: 0;
   text-align: center;
+  background: rgba(207,207,207,0.6)
 }
 
 .contents {
-  height: 100%;
-  width: 950px;
-  margin-top: 70px;
+  height: 80%;
+  width: 80%;
+  max-width: 500px;
+  margin-top: 50px;
   position: relative;
   overflow: scroll;
-  background: #141414;
+  background: #FAF6FE;
+  border-radius: 20px;
+  opacity: 1;
 }
